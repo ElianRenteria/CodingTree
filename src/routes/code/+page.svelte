@@ -8,9 +8,9 @@
 t = turtle.Turtle()
 t.forward(100)
 
-print "Hello World" 
+print ("Hello World")
 </textarea><br /> 
-<button type="button" on:click={runit()}>Run</button> 
+<button type="button" on:click={runit}>Run</button> 
 </form> 
 <pre id="output" ></pre> 
 <!-- If you want turtle graphics include a canvas -->
@@ -50,3 +50,11 @@ print "Hello World"
         return Sk.builtinFiles["files"][x];
     }
 </script>
+
+<style>
+    #mycanvas {
+        border: 1px solid black;
+        width: 500px;
+        height: 500px;
+    }
+</style>

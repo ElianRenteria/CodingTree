@@ -4,6 +4,7 @@
   </script>
   
   <nav>
+    <p>Coding Tree</p>
     <ul>
       {#each links as { href, text }}
         <li>
@@ -18,6 +19,9 @@
       background: #333;
       color: #fff;
       padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
   
     ul {
@@ -26,6 +30,7 @@
       gap: 1rem;
       margin: 0;
       padding: 0;
+      align-items: center;
     }
   
     a {
@@ -35,6 +40,10 @@
   
     a:hover {
       text-decoration: underline;
+    }
+    p{
+        display: inline;
+        margin-right: 2rem;
     }
   </style>
   
