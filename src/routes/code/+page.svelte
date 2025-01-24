@@ -1,20 +1,16 @@
-<h1>Code</h1>
-
-    
-<h3>Try This</h3> 
-<form> 
-<textarea id="yourcode" cols="40" rows="10">import turtle
-
-t = turtle.Turtle()
-t.forward(100)
-
-print ("Hello World")
-</textarea><br /> 
-<button type="button" on:click={runit}>Run</button> 
-</form> 
-<pre id="output" ></pre> 
-<!-- If you want turtle graphics include a canvas -->
-<div id="mycanvas"></div> 
+<div id="content">
+    <iframe title="code" src="https://trinket.io/embed/python3" width="100%" height="100%" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    <!--<h3>Try This</h3>
+    <button type="button" on:click={runit}>Run</button> 
+    <div id="code_container">
+        <form> 
+        <textarea id="yourcode" cols="40" rows="10">print("Hello World")</textarea>
+        </form> 
+        <h6>Output</h6>
+        <pre id="output" ></pre>
+    </div>  
+    <div id="mycanvas"></div> -->
+</div>
 
 
 <script type="text/javascript">
@@ -28,6 +24,11 @@ print ("Hello World")
         Sk.pre = "output";
         Sk.configure({output:outf, read:builtinRead}); 
         (Sk.TurtleGraphics || (Sk.TurtleGraphics = {})).target = 'mycanvas';
+        Sk.externalLibraries = {
+            requests: {
+                path: 'static/'
+            }
+        }
         var myPromise = Sk.misceval.asyncToPromise(function() {
             return Sk.importMainWithBody("<stdin>", false, prog, true);
         });
@@ -56,5 +57,38 @@ print ("Hello World")
         border: 1px solid black;
         width: 500px;
         height: 500px;
+    }
+    #content{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+    }
+    #yourcode{
+        text-align: left;
+    }
+    #mycanvas{
+        display: none;
+    }
+    #output{
+        text-align: left;
+        width: 100%;
+        border: 1px solid rgba(0, 0, 0, 0.484);
+        padding: .3rem;
+        border-radius: .2rem;
+    }
+    h6{
+        color: grey;
+        margin: 0;
+        margin-top: 1rem;
+        padding: 0;
+    }
+    #code_container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
     }
 </style>

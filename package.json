@@ -23,6 +23,7 @@
 		"vitest": "^3.0.0"
 	},
 	"dependencies": {
+		"@picocss/pico": "^2.0.6",
 		"jquery": "^3.7.1",
 		"skulpt": "^1.2.0"
 	}
