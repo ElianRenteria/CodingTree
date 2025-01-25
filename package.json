@@ -27,6 +27,7 @@
 	},
 	"dependencies": {
 		"@picocss/pico": "^2.0.6",
+		"iconify-icon": "^2.3.0",
 		"jquery": "^3.7.1",
 		"skulpt": "^1.2.0"
 	}

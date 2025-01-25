@@ -1,13 +1,14 @@
 <script>
   // Import components or define any props if needed
   import Navbar from '$lib/components/Navbar.svelte';
-
+  import 'iconify-icon';
   // Sample navigation links
   const links = [
-    { href: '/', text: 'Home' },
-    { href: '/about', text: 'About' },
-    { href: '/code', text: 'Code' },
-    { href: '/signin', text: 'Sign In' }
+    { href: '/', text: 'Home', icon: 'mdi:home' },
+    { href: '/java', text: 'Java', icon: 'mdi:language-java' },
+    { href: '/pygame', text: 'Pygame', icon: 'mdi:gamepad-variant' },
+    { href: '/python', text: 'Python', icon: 'mdi:language-python' },
+    { href: '/signin', text: 'Sign In', icon: 'mdi:login' }
   ];
 </script>
 

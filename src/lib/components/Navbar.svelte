@@ -1,7 +1,7 @@
 <script>
-    // Optional: Define your navigation links
-    export let links = [];
-  </script>
+  // Optional: Define your navigation links
+  export let links = [];
+</script>
   
   <nav>
     <div class="navBarLogo">
@@ -9,9 +9,9 @@
       <p id="title">CodingTree </p>
     </div>
     <ul id="navBar">
-      {#each links as { href, text }}
+      {#each links as { href, text, icon }}
         <li >
-          <a class="navBarLink dynamic-text" href={href}>{text}</a>
+          <a class="navBarLink dynamic-text" href={href}><iconify-icon icon="{icon}"></iconify-icon>{text}</a>
         </li>
       {/each}
     </ul>
@@ -60,6 +60,8 @@
         font-size: 1.1rem;
         text-decoration: none;
         font-weight: 500;
+        display: flex;
+        align-items: center;
     }
     .navBarLink:hover{
         color: var(--pico-color-lime-250);
@@ -79,6 +81,9 @@
       display: flex;
       align-items: center;
       margin-left: 1rem;
+    }
+    iconify-icon{
+      margin-right: .2rem;
     }
   </style>
   
