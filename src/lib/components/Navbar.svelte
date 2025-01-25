@@ -46,6 +46,7 @@
       text-decoration: underline;
     }
     #title{
+      line-height: 2rem;
         display: inline;
         padding: 0;
         margin: 0;
@@ -65,17 +66,19 @@
         text-decoration: none;
     }
     #logo {
-      width: 3rem;
+      width: 1.5rem;
       height: auto;
       display: inline;
       margin: 0;
-      margin-left: 1rem;
       padding: 0;
-      padding-bottom: .6rem;
+      margin-right: .3rem;
+      padding-bottom: .5rem;
+      padding-top: .2rem;
     }
     .navBarLogo{
       display: flex;
-      align-items: end;
+      align-items: center;
+      margin-left: 1rem;
     }
   </style>
   
