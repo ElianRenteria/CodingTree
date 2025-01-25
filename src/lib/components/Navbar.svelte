@@ -4,11 +4,11 @@
   </script>
   
   <nav>
-    <p id="title">CodingTree</p>
+    <p id="title">CodingTree </p>
     <ul id="navBar">
       {#each links as { href, text }}
         <li >
-          <a class="navBarLink" href={href}>{text}</a>
+          <a class="navBarLink dynamic-text" href={href}>{text}</a>
         </li>
       {/each}
     </ul>
@@ -17,12 +17,12 @@
   <style>
     nav {
       height: 10vh;
-      background: #333;
-      color: #fff;
+      background: var(--dynamic-bg-color);
       padding: 1rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      box-shadow: inset 0 -1px 0 0 var(--dynamic-shadow-color);
     }
   
     ul {
@@ -48,17 +48,18 @@
         margin: 0;
         margin-left: 1rem;
         font-size: 2rem;
-        color: greenyellow;
+        color: var(--pico-color-lime-250);
     }
     #navBar{
         margin-right: 2rem;
     }
     .navBarLink{
+        font-size: 1.1rem;
         text-decoration: none;
+        font-weight: 500;
     }
     .navBarLink:hover{
-        font-weight: bold;
-        color: greenyellow;
+        color: var(--pico-color-lime-250);
         text-decoration: none;
     }
   </style>

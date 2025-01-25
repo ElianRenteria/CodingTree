@@ -6,3 +6,19 @@ body {
 * {
     font-family: "Roboto", serif;
 }
+
+:root {
+    --dynamic-text-color: black;
+    --dynamic-bg-color: var(--pico-color-grey-50);
+    --dynamic-shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    --dynamic-text-color: white;
+    --dynamic-bg-color: var(--pico-color-slate-900);
+    --dynamic-shadow-color: rgba(236, 233, 233, 0.165);
+}
+
+.dynamic-text {
+    color: var(--dynamic-text-color);
+}

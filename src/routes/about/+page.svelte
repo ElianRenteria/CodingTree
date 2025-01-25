@@ -10,5 +10,6 @@
         flex-direction: column;
         align-items: center;
         justify-content: start;
+        margin-top: 2rem;
     }
 </style>

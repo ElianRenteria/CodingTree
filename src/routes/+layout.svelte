@@ -16,3 +16,5 @@
 
 <!-- Ensure <slot /> is included to render child pages -->
 <slot />
+
+<style lang="scss">@import '../styles/style.scss';</style>
