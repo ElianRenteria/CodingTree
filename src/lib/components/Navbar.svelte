@@ -4,7 +4,10 @@
   </script>
   
   <nav>
-    <p id="title">CodingTree </p>
+    <div class="navBarLogo">
+      <img src="/coding_tree_logo.png" alt="CodingTree Logo" id="logo"/>
+      <p id="title">CodingTree </p>
+    </div>
     <ul id="navBar">
       {#each links as { href, text }}
         <li >
@@ -46,7 +49,6 @@
         display: inline;
         padding: 0;
         margin: 0;
-        margin-left: 1rem;
         font-size: 2rem;
         color: var(--pico-color-lime-250);
     }
@@ -61,6 +63,19 @@
     .navBarLink:hover{
         color: var(--pico-color-lime-250);
         text-decoration: none;
+    }
+    #logo {
+      width: 3rem;
+      height: auto;
+      display: inline;
+      margin: 0;
+      margin-left: 1rem;
+      padding: 0;
+      padding-bottom: .6rem;
+    }
+    .navBarLogo{
+      display: flex;
+      align-items: end;
     }
   </style>
   
