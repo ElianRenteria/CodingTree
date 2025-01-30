@@ -7,8 +7,23 @@
     const handleIframeLoad = () => {
       setTimeout(() => {
         iframeLoaded = true; // Show iframe after 1 second delay
+        const iframe = document.querySelector('#yourcode');
+iframe.addEventListener('load', () => {
+  const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+
+  // Now you can target the textarea inside the iframe (or any other element)
+  const textArea = iframeDoc.querySelector('.ace_content');
+
+  if (textArea) {
+    textArea.textContent = 'Your new content here!';
+  } else {
+    console.error('Textarea not found inside the iframe.');
+  }
+});
+
       }, 1100); // 1000ms = 1 second
     };
+    
   </script>
   
   <div id="content">
