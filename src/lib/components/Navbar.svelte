@@ -68,7 +68,7 @@
         text-decoration: none;
     }
     #logo {
-      width: 1.3rem;
+      width: 1.2rem;
       height: auto;
       display: inline;
       margin: 0;

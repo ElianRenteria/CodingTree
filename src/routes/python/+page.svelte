@@ -88,15 +88,6 @@
     max-width: 25rem;
     font-family: monospace;
   }
-  button {
-    margin: 1rem 0;
-    padding: 0.5rem 1rem;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
   pre {
     background: #f4f4f4;
     padding: 1rem;
@@ -127,5 +118,13 @@
   h1 {
     font-weight: 500;
     color: rgb(101, 101, 101);
+  }
+  button{
+    background-color: var(--pico-color-blue-500);
+    color: white;
+    border-color: var(--pico-color-blue-550);
+  }
+  button:hover{
+    background-color: var(--pico-color-blue-600);
   }
 </style>
